@@ -1,0 +1,21 @@
+node:internal/modules/cjs/loader:1080
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /srv/app/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (/srv/app/server.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/srv/app/server.js' ]
+}
+
+Node.js v20.11.0
+npm ERR! code 1
+npm ERR! path /srv/app
+npm ERR! command failed
+npm ERR! command sh -c node server.js

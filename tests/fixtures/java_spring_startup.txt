@@ -1,0 +1,22 @@
+2026-04-22 10:12:03.912  INFO 1 --- [           main] com.example.DemoApplication              : Starting DemoApplication v0.0.1
+2026-04-22 10:12:04.514  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-04-22 10:12:05.981  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+2026-04-22 10:12:05.990 ERROR 1 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   :
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.OrderService required a bean of type 'com.example.OrderRepository' that could not be found.
+
+Action:
+
+Consider defining a bean of type 'com.example.OrderRepository' in your configuration.
+
+Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderService'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.OrderRepository' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	... 50 more

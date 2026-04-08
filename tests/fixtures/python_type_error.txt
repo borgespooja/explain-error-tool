@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/app/main.py", line 10, in <module>
+    total = sum_items([1, 2, "3"])
+  File "/app/main.py", line 5, in sum_items
+    return sum(items)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'

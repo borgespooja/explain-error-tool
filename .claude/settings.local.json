@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pip install -e '.[dev]' --quiet)",
+      "Bash(python -m pytest tests/test_parser.py -q)",
+      "Bash(python -m pytest tests/test_detector.py -q)",
+      "Bash(python -m pytest -q)",
+      "Bash(python *)",
+      "Bash(echo \"exit=$?\")"
+    ]
+  }
+}
