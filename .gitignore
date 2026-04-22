@@ -21,6 +21,7 @@ htmlcov/
 .vscode/
 .idea/
 .DS_Store
+.claude/
 
 # Environment
 .env
